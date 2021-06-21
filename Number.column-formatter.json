@@ -1,0 +1,83 @@
+{
+    "elmType": "div",
+    "style": {
+      "box-sizing": "border-box",
+      "padding": "0 2px"
+    },
+    "attributes": {
+      "class": {
+        "operator": ":",
+        "operands": [
+          {
+            "operator": "<",
+            "operands": [
+              "@currentField",
+              30
+            ]
+          },
+          "sp-css-backgroundColor-neutralBackground sp-field-iconRightAligned sp-field-borderAllRegular sp-field-borderAllDashed sp-css-borderColor-redDark",
+          ""
+        ]
+      }
+    },
+    "children": [
+      {
+        "elmType": "span",
+        "attributes": {
+          "iconName": {
+            "operator": ":",
+            "operands": [
+              {
+                "operator": "<",
+                "operands": [
+                  "@currentField",
+                  30
+                ]
+              },
+              "Warning",
+              ""
+            ]
+          },
+          "class": {
+            "operator": ":",
+            "operands": [
+              {
+                "operator": "<",
+                "operands": [
+                  "@currentField",
+                  30
+                ]
+              },
+              "sp-css-color-redDark sp-field-iconPadding",
+              ""
+            ]
+          }
+        }
+      },
+      {
+        "elmType": "span",
+        "style": {
+          "overflow": "hidden",
+          "text-overflow": "ellipsis",
+          "padding": "0 2px"
+        },
+        "txtContent": "@currentField",
+        "attributes": {
+          "class": {
+            "operator": ":",
+            "operands": [
+              {
+                "operator": "<",
+                "operands": [
+                  "@currentField",
+                  30
+                ]
+              },
+              "sp-css-color-redDark",
+              ""
+            ]
+          }
+        }
+      }
+    ]
+  }

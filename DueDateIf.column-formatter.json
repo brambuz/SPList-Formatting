@@ -1,0 +1,31 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+    "elmType": "div",
+    "debugMode": true,
+    "attributes": {
+        "class": "=if(@currentField <= @now ,'sp-css-backgroundColor-BgCoral sp-field-iconRightAligned', if(@currentField <= @now + 2592000000 && @currentField > @now,'sp-css-backgroundColor-BgGold sp-css-borderColor-GoldFont sp-field-iconRightAligned','sp-css-backgroundColor-BgMintGreen'))"
+    },
+    "children": [
+        {
+            "elmType": "span",
+            "style": {
+                "display": "inline-block",
+                "padding": "0 4px"
+            },
+            "attributes": {
+                "iconName": "=if(@currentField <= @now + 2592000000 ,'Warning', '')",
+                "class": "=if(@currentField <= @now ,'sp-css-color-CoralFont', if(@currentField <= @now + 2592000000 && @currentField > @now,'sp-css-color-GoldFont','sp-css-color-MintGreenFont'))"
+            }
+        },
+        {
+            "elmType": "span",
+            "txtContent": "@currentField",
+            "attributes": {
+                "class": "=if(@currentField <= @now ,'sp-css-color-CoralFont', if(@currentField <= @now + 2592000000 && @currentField > @now,'sp-css-color-GoldFont','sp-css-color-MintGreenFont'))"
+            },
+            "style": {
+                "padding-left":"=if(@currentField <= @now + 2592000000,'10px','')"
+            }
+        }
+    ]
+}
