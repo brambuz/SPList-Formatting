@@ -1,0 +1,22 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/tile-formatting.schema.json",
+    "groupProps": {
+        "headerFormatter": {
+            "elmType": "div",
+            "style": {
+                "flex-direction": "row",
+                "width": "100%",
+                "overflow": "hidden"
+            },
+            "children": [
+                {
+                    "elmType": "div",
+                    "children": [{
+                        "elmType": "span",
+                        "txtContent":
+                    }]
+                }
+            ]
+        }
+    }
+}

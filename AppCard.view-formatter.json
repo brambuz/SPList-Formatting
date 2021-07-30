@@ -1,0 +1,111 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/tile-formatting.schema.json",
+    "groupProps": {
+      "headerFormatter": {
+        "elmType": "div",
+        "style": {
+          "flex-direction": "row",
+          "width": "100%",
+          "overflow": "hidden"
+        },
+        "children": [
+          {
+            "elmType": "div",
+            "children": [
+              {
+                "elmType": "span",
+                "txtContent":"@group.fieldData.title",
+                "style": {
+                  "display":"block",
+                  "font-size": "1.17em",
+                  "padding-bottom":"16px",
+                  "font-weight": "bold"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "height": 142,
+    "width": 194,
+    "hideSelection": false,
+    "fillHorizontally": true,
+    "formatter": {
+      "elmType": "div",
+      "attributes": {
+        "class": "sp-card-container"
+      },
+      
+      "children": [
+        {
+          "elmType": "div",
+          "attributes": {
+            "class": "ms-bgColor-white sp-css-borderColor-neutralLight sp-card-borderHighlight sp-card-subContainer"
+          },
+          "children": [
+            {
+              "elmType": "div",
+              "attributes": {
+                "class": "sp-card-displayColumnContainer "
+              },
+              "style": {
+                "margin":"auto"
+              },
+              "children": [
+                {
+                  "elmType": "div",
+                  "style": {
+                    "text-align":"center"
+                  },
+                  "children": [
+                    {
+                      "elmType": "a",
+                      "attributes": {
+                        "href": "[$PAAppLinkUrl]",
+                        "target":"_blank"
+                      },
+                      "style": {
+                        "font-size": "40px"
+                      },
+                      "children": [
+                        {
+                          "elmType": "span",
+                          "attributes": {
+                            "class":"ms-fontColor-neutralPrimary",
+                            "iconName": "=if ([$PAAppIcon] == '', '–', [$PAAppIcon])"
+                          },
+                          "style": {
+                            "font-size": "40px",
+                            "margin-top":"15px"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "elmType": "div",
+                  "children": [
+                    {
+                      "elmType": "a",
+                      "attributes": {
+                        "title": "[$Title]",
+                        "class": "ms-fontColor-neutralPrimary sp-card-content sp-card-highlightedContent",
+                        "href": "[$PAAppLinkUrl]",
+                        "target":"_blank"
+                      },
+                      "style": {
+                        "text-decoration":"none"
+                      },
+                      "txtContent": "=if ([$Title] == '', '–', [$Title])"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
